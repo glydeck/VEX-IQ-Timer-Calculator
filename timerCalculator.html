@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- VEX IQ Timer Calculator -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>VEX IQ Timer Calculator</title>
+    <link rel="stylesheet" type="text/css" href="./css/timerCalculator.css">
+    <script src="./js/timerCalculator.js"></script>
+  </head>
+  <body>
+    <center>
+      <!--Timer html-->
+      <div id="vexiqTimer" class="centered_timer" style="display: none;">
+        <center>
+          <p>
+            <img src="./images/Cougar-sm.png" alt="Cougar Robotics" width="200">
+          </p>
+          <h1>Rapid Relay Match Timer</h1>
+          <p>
+            <span id="timerDisp" style="font-size:160px;">60</span>
+          <h1 style="font-size:60px;">Seconds</h1>
+          <br>
+          <button onclick="startTimer()" class="tmrbtn btngrn">Start</button>
+          <button onclick="stopTimer()"  class="tmrbtn btnred">Stop</button>
+          <button onclick="resetTimer()" class="tmrbtn btnblu">Reset</button>
+          <br>
+          <br>
+          <button class="widebtn btnwht thinborder" onclick="switchToCalc()">Score Calculator</button>
+          </p>
+        </center>
+      </div>
+      <!--Calculator html-->
+      <div id="scoreCalculator" class="centered_calc" style="display: block;">
+        <center>
+          <p>
+            <img src="./images/Cougar-sm.png" alt="Cougar Robotics" width="200">
+          </p>
+          <h1 id="calcTitle">Rapid Relay Score Calculator</h1>
+          <form>
+            <label for="matchType" id="matchTypeLabelLabel">Match type</label>
+            <select id="matchType" onchange="calculateScores()">
+              <option value="0">Teamwork</option>
+              <option value="1">Driver skills</option>
+              <option value="2">Programming skills</option>
+            </select>
+            <br>
+            <br>
+            <label for="ballsScored" id="ballsScoredLabel">Total balls scored</label>
+            <input type="number" id="ballsScored" placeholder="0" onkeyup="calculateScores()" onchange="calculateScores()">
+            <br>
+            <br>
+            <label for="switchesCleared" id="switchesClearedLabel">Total switches cleared</label>
+            <input type="number" id="switchesCleared" placeholder="0" onkeyup="calculateScores()" onchange="calculateScores()">
+            <br>
+            <br>
+            <label for="passes" id="passesLabel">Number of passes</label>
+            <input type="number" id="passes" placeholder="0" onkeyup="calculateScores()" onchange="calculateScores()">
+            <br>
+            <br>
+          </form>
+          <h1 id="finalScore" style="font-size:60px; margin:5px;">Score: 0</h1>
+          <button class="widebtn btnred thinborder" onclick="clearFields()">Clear Fields</button>
+          <br>
+          <button class="widebtn btnwht thinborder" onclick="switchToTimer()">Match Timer</button>
+        </center>
+      </div>
+    </center>
+    <!-- Script Sets the startup page of either
+    Timer "switchToTimer()" or Calculator "switchToCalc()" -->
+    <script>
+      switchToTimer();
+    </script>
+    <!-- Optional Home Button -->
+    <!--
+    <a href="../someHome.html">
+        <img src="./images/HomeButton.png" style="border-style: none" alt="Home Button">
+    </a>
+    -->
+  </body>
+</html>
