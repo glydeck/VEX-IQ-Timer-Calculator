@@ -1,5 +1,5 @@
 -----------------------------------------------
-# VEX IQ Timer and Score Calculater
+# VEX IQ Timer and Score Calculator
 ## Using html, javascript, CSS
 #### Posted by glydeck 9/16/2024
 -----------------------------------------------
