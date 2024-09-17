@@ -17,7 +17,7 @@ Download code and use with any Browser.
  
  ##### Directory Layout
  
- <img src="./images/directorySetup.png" width="200">
+ <img src="./images/directorySetup.png" width="201">
 
 ## Contents
 ```
