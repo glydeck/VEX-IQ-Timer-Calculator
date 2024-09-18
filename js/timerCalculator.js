@@ -8,6 +8,7 @@
       let switchSound = new Audio("./audio/SwitchDrivers.mp3")
       let shortBeep = new Audio("./audio/Short-beep.mp3")
       let nearEnd = new Audio("./audio/tenSeconds.mp3")
+	  let rapidLoad = new Audio("./audio/rapidLoad.mp3")
       let enableCountdown = true;
 
 function calculateScores() {
@@ -103,7 +104,10 @@ function clearFields() {
         if (secRem == 31) {
           switchSound.play();
         }
-        if (secRem == 11) {
+                if (secRem == 16) {
+          rapidLoad.play();
+        }
+		if (secRem == 11) {
           nearEnd.play();
         }
         if (secRem <= 0) {
