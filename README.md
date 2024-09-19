@@ -5,8 +5,11 @@
 -----------------------------------------------
 
 ## Introduction
-This is a simple timer and score calculator designed to work as a stand alone package. It's based on existing VEX timer / calculators available on the internet. The only difference is that all of the files including images and audio are available in this package and do not require access to the Internet.
+This is a simple timer and score calculator designed to work as a stand alone package. It's based on existing VEX timer / calculators available on the internet. The only difference is that all of the files including images and audio are available in this package and do not require access to the Internet. The html, CSS, and javascript are presented as seperate files. This version is updated for the game **Rapid Relay**. 
 
+#### Screen Shot
+
+<img src="./images/Screen_Shot.png" width="500">
 
 ## Requirements to Use VEX Timer & Calculator
 
